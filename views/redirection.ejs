@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>chatIt</title>
+        <link rel="stylesheet" href="../assets/index.css">
+    </head>
+    <body>
+        <div id="div1">
+            <span id="span1"><b>chatIt</b></span>Now</br>
+            <span id="span2">
+                    Enlight your chatting experience</span>
+        </div></br>
+        <img id="img1" height="90" width="90" src="../assets/iconMain.jpg">
+        <body>
+            <i>Logging in as <b><%= user %></b>...</i></br>
+            <i>Click the button to initialize chatting.....</i>
+            <form method="post" action="/chatBox">
+                <input type="hidden" name="currentUser" value="<%= user %>" /> 
+                <button type="submit" name="initChatBox" value="initChatBox">Chat Box</button>
+            </form>
+        </body>    
+</html>

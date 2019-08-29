@@ -1,0 +1,54 @@
+
+body
+{
+    background-color: #253a59;
+}
+
+table
+{
+    background-color : #0a1526;
+    border-spacing : 20;
+    color: white;
+}
+
+#div1
+{
+    background-color: #0a1526;
+    color: white;
+    height: 20%;
+    text-align: center;
+    text-align: left;
+}
+
+#chatBoxDiv1
+{
+    position: relative;
+    left: 33%;
+    height: 300px;
+    width: 500px;
+    overflow: auto;
+    background-color:beige;
+}
+
+#chatBoxForm
+{
+    position: relative;
+    left: 33%;
+}
+
+#chatBoxtext1
+{
+    width: 450px;
+}
+
+#span1
+{
+    font-size: 60px;
+}
+
+#img1
+{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
