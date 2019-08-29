@@ -31,7 +31,7 @@ const socIo      = require('socket.io')
 var app              = Express()
 var Server           = http.createServer(app)
 var io               = socIo(Server)
-var PORT             = 3000
+var PORT             = process.env.PORT || 3000
 var urlencodedparser = bodyParser.urlencoded({extended : false})
 var socketMap = []
 
