@@ -1,4 +1,4 @@
-
+/*
 body
 {
     background-color: #253a59;
@@ -18,6 +18,16 @@ table
     height: 20%;
     text-align: center;
     text-align: left;
+}
+
+#receiverName
+{
+    position: relative;
+    left: 33%;
+    width: 500px;
+    overflow: auto;
+    background-color: crimson;
+    color: black;
 }
 
 #chatBoxDiv1
@@ -51,4 +61,90 @@ table
     position: absolute;
     top: 5%;
     left: 90%;
+}
+*/
+
+body
+{
+    /*background-color: #a1c5ff;*/
+    background-color: #82e9e9;
+}
+
+table
+{
+    /*background-color : #28e0ab;*/
+    background-color : #8affde;
+    border-spacing : 20;
+    color: black;
+}
+
+#div1
+{
+    background-color: #38e9b7;
+    color: black;
+    height: 20%;
+    text-align: center;
+    text-align: left;
+}
+
+#Quote
+{
+    position: absolute;
+    left:2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 105%;
+    /*color: #feffaf;*/
+    color: black;
+    height: 800px;
+    width: 500px;
+}
+
+#receiverName
+{
+    position: relative;
+    left: 33%;
+    width: 500px;
+    overflow: auto;
+    background-color: #f2f1a5;
+    color: black;
+}
+
+#chatBoxDiv1
+{
+    position: relative;
+    left: 33%;
+    height: 300px;
+    width: 500px;
+    overflow: auto;
+    background-color:beige;
+}
+
+#chatBoxForm
+{
+    position: relative;
+    left: 33%;
+}
+
+#chatBoxtext1
+{
+    width: 450px;
+}
+
+#span1
+{
+    font-size: 60px;
+}
+
+#img1
+{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
+
+#img2
+{
+    position: absolute;
+    top: 25%;
+    left: 65%;
 }

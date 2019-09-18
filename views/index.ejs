@@ -9,7 +9,22 @@
             <span id="span2">
                     Enlight your chatting experience</span>
         </div></br>
-        <img id="img1" height="90" width="90" src="../assets/iconMain.jpg">
+        <img id="img1" height="90" width="90" src="../assets/icon2.ico">
+
+        <div id="Quote">
+            <h1>"Abstractions hide details</h1>
+            <h2>and give us the ability to talk about<h2>
+            <h3>problems at a higher (or more abstract) level."</h3>
+            <h4><pre>           - Marijn Haverbeke, Eloquent JavaScript</pre></h4>
+
+            </br></br>
+
+            <h1>"Write code that is</h1>
+            <h2> easy to delete,<h2>
+            <h3>not easy to extend."</h3>
+            <h4><pre>           —Tef, Programming is Terrible</pre></h4>
+
+        </div>
         
         <form method="POST" action="/">
             <table align="center" id="table1">
@@ -51,8 +66,50 @@
                     <td><input type="email" name="email" id="email" /></td>
                 </tr>
                 <tr>
-                    <td colspan="2"> <input type="submit" name="submit" id="submit" value="signUp"/></td>
+                    <td colspan="2"> <input type="submit" name="submit" id="submit" value="signUp" onclick="return validate()"/></td>
                 </tr>
             </table>
         </form>
+
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <script>
+            $(
+                function()
+                {
+                    var errorMsg = '<%= errorMessage%>'
+                    if(errorMsg != "")
+                        alert(errorMsg)
+                }
+            )
+            function validate()
+            {
+                var errorMsg = ""
+                if(!$("#username").val())
+                {
+                    errorMsg += "User name can't be empty\n"
+                }
+                if(!$("#pass").val())
+                {
+                    errorMsg += "Password can't be empty\n"
+                }
+                if(!$("#rePass").val())
+                {
+                    errorMsg += "Retype Password can't be empty\n"
+                }
+                if(!$("#email").val())
+                {
+                    errorMsg += "Email can't be empty\n"
+                }
+                if(errorMsg != "")
+                {
+                    alert(errorMsg)
+                    return false
+                }
+                else
+                {
+                    alert("Signed up successfully.")
+                    return true;
+                }
+            }
+        </script>
 </html>

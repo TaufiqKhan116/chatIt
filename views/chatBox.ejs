@@ -9,15 +9,16 @@
             <span id="span2">
                     Enlight your chatting experience</span>
         </div></br>
-        <img id="img1" height="90" width="90" src="../assets/iconMain.jpg">
+        <img id="img1" height="90" width="90" src="../assets/icon2.ico">
 
-        logged in as <b><span id="currentUser"><%= user %></span></b>...</br>
+        logged in as <b><span id="currentUser"><%= user %></span></b>...</br>Select a Receiver
 
         <button id="selectButton">Select</button></br>
 
         <% for(var i = 0; i < obj.length; i++){ %>
             <input type="radio" name="option" value="<%= obj[i].username %>" /> <%= obj[i].username %><br><% } %>
 
+            <div id="receiverName"></div>
             <div id="chatBoxDiv1"></div>
             <form action="" id="chatBoxForm">
                 <input id="m" autocomplete="off" /><button>Send</button>
@@ -34,7 +35,10 @@
                     })
                     $('#selectButton').click(function(e)
                     {
-                        socket.emit('selectReceiver', $("input[name='option']:checked").val())
+                        var selected =  $("input[name='option']:checked").val()
+                        socket.emit('selectReceiver', selected)
+                        $("#receiverName").text('Receiver : ' + selected)
+
                     })
 
                     $('form').submit(function(e)
