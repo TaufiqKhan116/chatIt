@@ -78,6 +78,15 @@ table
     color: black;
 }
 
+#tableDiv
+{
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    height: 300px;
+    width: 500px;
+}
+
 #div1
 {
     background-color: #38e9b7;
@@ -90,13 +99,14 @@ table
 #Quote
 {
     position: absolute;
+    background-color: beige;
     left:2%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 105%;
     /*color: #feffaf;*/
     color: black;
-    height: 800px;
-    width: 500px;
+    height: 600px;
+    width: 400px;
 }
 
 #receiverName
