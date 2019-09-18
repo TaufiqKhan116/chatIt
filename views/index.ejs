@@ -9,7 +9,7 @@
             <span id="span2">
                     Enlight your chatting experience</span>
         </div></br>
-        <img id="img1" height="90" width="90" src="../assets/icon2.ico">
+        <span id="Credits"><img id="img1" height="90" width="90" src="../assets/icon2.ico"></span>
 
         <div id="Quote">
             <h1>"Abstractions hide details</h1>
@@ -22,7 +22,7 @@
             <h1>"Write code that is</h1>
             <h2> easy to delete,<h2>
             <h3>not easy to extend."</h3>
-            <h4><pre>           —Tef, Programming is Terrible</pre></h4>
+            <h4><pre>           - Tef, Programming is Terrible</pre></h4>
 
         </div>
         <div id="tableDiv">
@@ -82,6 +82,10 @@
                         alert(errorMsg)
                 }
             )
+            $("#Credits").on('click', function(event)
+            {
+                alert("Course Title : Software Development Project 1\nCourse Code : CSE 2100\nSubmitted by :\n Md. Taufiq Khan\n 1703125\nSupervisor :\n Md. Asifur Rahman\n Lecturer, Dept. of CSE,\n RUET\n\nContact :\n Phone : 01952749248\n e-mail : khantaufiq2017@gmail.com")
+            })
             function validate()
             {
                 var errorMsg = ""
