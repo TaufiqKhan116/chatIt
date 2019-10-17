@@ -186,7 +186,7 @@ app.set('view engine','ejs')
 app.use('/assets', Express.static('assets'))
 app.use('/resorces/images', Express.static('/resorces/images'))
 
-mongoose.connect('mongodb+srv://Taufiq:anikapochameye@cluster0-aeqya.mongodb.net/chatIt?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://Taufiq:anikapochameye@cluster0-aeqya.mongodb.net/chatIt?retryWrites=true&w=majority',{ useNewUrlParser: true })
 var profileSchema = new mongoose.Schema({
     username: String,
     pass: String,
